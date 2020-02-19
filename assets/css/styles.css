@@ -1,0 +1,112 @@
+.wrapper{
+	padding: 15px;
+	max-width: 500px;
+	margin: 0 auto;
+}
+row {
+  padding-left: 15px;
+}
+
+.menu {
+  border-right: 1px solid #ddd;
+}
+
+.list-group-item {
+  transition: background 0.3s, color 0.3s;
+}
+
+.list-group-item a {
+  text-decoration: none;
+}
+
+.list-group-item.active a {
+  color: inherit;
+}
+
+.minicart {
+  cursor: pointer;
+  position: relative;
+}
+
+.minicart .minicart__icon {
+  width: 50px;
+}
+
+.minicart .minicart__count {
+  position: absolute;
+  z-index: 1;
+  width: 24px;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid darkblue;
+  background: #ffffff;
+  left: -4px;
+}
+
+.footer__nav a {
+  position: relative;
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer__nav a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform .5s ease;
+}
+
+.footer__nav a:hover:before {
+  transform: scaleX(1);
+}
+
+.footer__nav a.active {
+  color: #f8d7da;
+}
+.footer__nav a.active:before {
+  content: none;
+}
+.slide-enter-active {
+  animation: slideIn 0.5s;
+}
+
+.slide-leave-active {
+  animation: slideOut 0.5s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(90deg);
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */
+{
+  opacity: 0;
+}
