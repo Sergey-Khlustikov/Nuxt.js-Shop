@@ -1,6 +1,6 @@
 # shop-nuxt
 
-> Shop Nuxt.js
+> Migration of this project (https://github.com/Sergey-Khlustikov/Vue.js-Shop) to Nuxt.js
 
 ## Build Setup
 
